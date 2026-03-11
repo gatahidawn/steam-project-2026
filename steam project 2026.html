@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>The World Heroes</title>
+
+<style>
+body{
+font-family: Arial;
+text-align:center;
+background-color:#0077b6;
+color:white;
+padding:40px;
+}
+button{
+font-size:18px;
+padding:10px 20px;
+background-color:#00b4d8;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>🌍 The World Heroes</h1>
+<h2>SDG 14: Life Below Water</h2>
+
+<p>Our oceans are important. Heroes help protect sea animals and stop ocean pollution.</p>
+
+<button onclick="showHero()">Meet a World Hero</button>
+
+<h2 id="hero"></h2>
+<p id="fact"></p>
+
+<script>
+function showHero(){
+
+let heroes = [
+["Sylvia Earle","She is a scientist who protects the ocean."],
+["Boyan Slat","He invented machines to clean plastic from oceans."],
+["Ocean Kids","Young people helping protect sea animals."],
+["Sea Rangers","People who protect coral reefs and fish."]
+];
+
+let random = Math.floor(Math.random()*heroes.length);
+
+document.getElementById("hero").innerText = heroes[random][0];
+document.getElementById("fact").innerText = heroes[random][1];
+
+}
+
+</script>
+
+</body>
+</html><h2>🌊 Ocean Mini Games</h2>
+
+<button onclick="startGame('quiz')">Quiz Game</button>
+<button onclick="startGame('catch')">Catch Plastic</button>
+<button onclick="startGame('memory')">Memory Match</button>
+
+<div id="gameArea"></div>
+<button onclick="checkAnswer('fish')">Fish</button>
+<p id="quizResult"></p>
+<button onclick="checkAnswer('fish')">Fish</button>
+<button onclick="checkAnswer('lion')">Lion</button>
+<button onclick="checkAnswer('turtle')">Turtle</button>
+<section class="sdg14">
+  <h2>🌊 SDG 14: Life Below Water</h2>
+
+  <p>
+  SDG 14 is a global goal to protect our oceans, seas, and marine life.
+  Oceans give us food, oxygen, and homes for many amazing animals.
+  </p>
+
+  <div class="examples">
+
+    <div class="card">
+      <h3>🐢 Protect Sea Animals</h3>
+      <p>Sea turtles, whales, and fish need clean oceans to survive.</p>
+    </div>
+
+    <div class="card">
+      <h3>🚫 Stop Plastic Pollution</h3>
+      <p>Millions of plastic pieces enter oceans each year.</p>
+    </div>
